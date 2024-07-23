@@ -13,13 +13,13 @@ public class ForClass {
         //     sum = sum + a;
         // } 
         //     System.out.println("합:" + sum);
-            
+        
 
-        // // for문 무한루프.
+        // for문 무한루프.
 
-        // for(;;){
-        //     System.out.println("Hello world");
-        // }
+        for(;;){
+            System.out.println("Hello world");
+        }
 
         // 2중 for문. 구구단
 		// for문에서 쓰는 순서 i,j,k 순
