@@ -1,7 +1,4 @@
-
-
-
-
+import day_2024_07_23.Rectangle;
 
 public class RecTanGle {
     public static void main(String[] args) {

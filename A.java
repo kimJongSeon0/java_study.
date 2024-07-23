@@ -3,9 +3,9 @@
 
 
 public class A {
-    private int a = 1;
+    public int a = 1;
     
-    A(){
+    public A(){
         System.out.println("객체 생성");
     }
 }

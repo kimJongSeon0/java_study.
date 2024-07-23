@@ -1,8 +1,10 @@
+import day_2024_07_23.Rectangle;
 
 class A {
 
     int num; //인스턴스 변수;
     int kor, eng, math;
+    public int a;
 
     double getAvg() {
         return (kor + eng + math) / 3.0;
