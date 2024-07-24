@@ -2,18 +2,13 @@ package day_2024_07_23;
 
 import java.util.Scanner;
 
-class UpDownGame {
+public class UpDownMain2 {
 
-    private final int CHANCE_COUNT = 5;
-    private int chance;
-    private int answer;
+    public static void main(String[] args) {
+        // 1~5사이의 랜덤 숫자 만들기
+        int chance = 5;
+        int answer = (int) ((Math.random() * 50) + 1);   // 1부터 50까지 숫자중 랜덤 숫자 뽑기
 
-    public UpDownGame() {
-        chance = CHANCE_COUNT;
-        answer = (int) ((Math.random() * 50) + 1);
-    }
-
-    public void run() {
         System.out.println("테스트용 랜덤숫자: " + answer);
 
         while (true) {
@@ -43,14 +38,5 @@ class UpDownGame {
             }
 
         }
-    }
-}
-
-public class UpDownClass {
-
-    public static void main(String[] args) {
-
-        UpDownGame game = new UpDownGame();
-        game.run();
     }
 }
