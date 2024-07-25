@@ -18,7 +18,7 @@ class OverloadingEx {
     }
 
     public void function(int num, int num2) {
-        System.out.println(num);
+        System.out.println(num2);
     }
 }
 
@@ -52,8 +52,21 @@ class Person {
 public class ExampleMain {
 
     public static void main(String[] args) {
-        OverloadingEx ex = new OverloadingEx();
+        // switch 정수로 해야함
+        int num = 1;
+        String str = "Spring";
 
+        switch (str) {
+            case "Spring":
+                System.out.println("봅 입니다.");
+        }
+
+        switch (num) {
+            case 1, 2, 3:
+                System.out.println("1번 입니다.");
+        }
+
+        OverloadingEx ex = new OverloadingEx();
         ex.function();
         ex.function(10);
 
@@ -66,5 +79,14 @@ public class ExampleMain {
         jung.showPersonalInfo();
         hong.showPersonalInfo();
 
+        String st1 = "abcdefg";
+
+        String st2 = st1.substring(2);
+        System.out.println(st2);
+
+        String st3 = st1.substring(2, 4);
+        System.out.println(st3);
+
     }
+
 }
