@@ -36,7 +36,7 @@ class AA {
         System.out.println("메롱!!");
         System.out.println("메롱!!");
         System.out.println("메롱!!");
-        
+
     }
 }
 
