@@ -79,7 +79,8 @@ public class ExampleMain {
         jung.showPersonalInfo();
         hong.showPersonalInfo();
 
-        String st1 = "abcdefg";
+        String st1 = "abcdefg" + "100";
+        System.out.println(st1);
 
         String st2 = st1.substring(2);
         System.out.println(st2);
