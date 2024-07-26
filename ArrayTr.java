@@ -16,7 +16,6 @@ public class ArrayTr {
         // System.out.println(arrayInt3[0][0]);
 
         System.out.println(arrayInt4[0][0]);  //배열 순서는 0번부터 시작(0,1,2,3,4)
-
     }
   }
 

@@ -23,14 +23,46 @@ class BabyCar extends MoterCar{
     public void start(){
         System.out.println(gettire() + "갑니다");
     }
-    
+
     BabyCar(String tire){
         super(tire);
     }
 }
 
+class Vehicle{
+    private String carName;
+    
+    Vehicle(String carName){
+        this.carName = carName;
+    }
+    Vehicle(){
+        this("");
+    }
+    public void putAccel(){
+        System.out.println("밟아요");
+    }
+}
+
+class Tire extends Vehicle{
+    
+    Tire(String carName){
+        super(carName);
+    }
+    @Override
+    public void putAccel(){
+        super.putAccel();
+        System.out.println("구른다");
+        
+    }
+}
+
 public class CarExtends {
+    
     public static void main(String[] args) {
+
+        Tire tire = new Tire("카니발");
+        tire.putAccel();
+        
         MoterCar mcar = new MoterCar("아들아 ");
         BabyCar bcar =new BabyCar("네 엄마 ");
         
