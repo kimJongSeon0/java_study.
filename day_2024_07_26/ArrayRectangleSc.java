@@ -17,7 +17,7 @@ class RectangleSc {
 
 }
 
-public class ArryRectangleSc {
+public class ArrayRectangleSc {
 
     public static void main(String[] args) {
 

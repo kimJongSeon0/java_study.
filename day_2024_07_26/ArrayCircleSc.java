@@ -15,7 +15,7 @@ class Circle1 {
 	}
 }
 
-public class ArryCircleSc {
+public class ArrayCircleSc {
 
 	public static void main(String[] args) {
 

@@ -13,7 +13,7 @@ class Circle {
 	}
 }
 
-public class ArryCircle {
+public class ArrayCircle {
 
 	public static void main(String[] args) {
 
