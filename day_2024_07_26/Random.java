@@ -13,6 +13,6 @@ public class Random {
                     max = intRandom[i];
                 }
             }
-            System.out.println(max);
+            System.out.println("Max: " + max);
         }
     }
