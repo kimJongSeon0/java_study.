@@ -45,7 +45,6 @@ class ColorPoint extends Point {
     }
 }
 
-//32 인치 1024컬러
 public class Practice {
 
     public static void main(String[] args) {
