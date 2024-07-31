@@ -39,6 +39,8 @@ public class InstanceOfMain {
             ((GoldPaperBox) box).goldWrap();
 
         } else if (box instanceof PaperBox) {
+            /*PaperBox pBox = (PaperBox)box;	//둘이 똑같음	((PaperBox) box).paperWrap();
+			pBox.paperWrap();*/
             ((PaperBox) box).paperWrap();
 
         } else {
