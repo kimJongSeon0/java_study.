@@ -1,43 +1,28 @@
-package day_2024_07_31;
+package day_2024_08_01;
 
-class Object{
-    public Object(){
+class Circle9 {
+    double radius;
 
-    }
-}
+    public Circle9(double radius) {
 
-class Circle extends Object{
-    
-    int radius;
-    final double PI = 3.14;
-
-    public void  Circle(double r){
-        
-    }
-        
-
-    void setRadius(int r) {
-        radius= r;
+        this.radius = radius;
     }
 
-    double getArea() {
+    public double getArea() {
         return radius * radius * Math.PI;
     }
 
     @Override
     public String toString(){
-        return "넓이는" + getArea() + "입니다";
+        return "넓이는 " + getArea() + " 입니다.";
     }
 }
 
+public class ObjectMain {
+    public static void main(String[] args) {
 
-    public class ObjectMain {
+        Object obj = new Circle9(10);
 
-        public static void main(String[] args) {
-            Object obj = new Circle(10);
-
-            System.out.println(obj);
-
-        }
-
+        System.out.println(obj); //출력: 넓이는 100 입니다. (예시)"
     }
+}
