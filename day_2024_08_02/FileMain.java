@@ -5,22 +5,39 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileMain {
+	public static void print() throws ArrayIndexOutOfBoundsException {
+		System.out.println("안녕하세요");
+	}
 
-    public static void print() throws ArrayIndexOutOfBoundsException {
-        System.out.println("안녕하세요");
-    }
+	public static void print2() throws Exception {
+		int a = 0 / 0;
+		System.out.println("안녕하세요");
+	}
 
-    public static void print2() throws FileNotFoundException {
-        System.out.println("안녕하세요");
-    }
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
+//		print();
+//		try {
+//			print2();
+//		} catch (Exception e) {
+//			System.out.println("파일이 없습니다.");
+//			e.printStackTrace();
+//		}
 
-        print();
-        print2();
+		File file = new File("abcd.txt");
+		try {
+			Scanner scanner = new Scanner(file);
+			while (scanner.hasNextLine()) {
+				String line = scanner.nextLine();
+				System.out.println(line);
+			}
+			scanner.close();
+		} catch (FileNotFoundException e) {
 
-//		File file = new File("abcd.txt");
-//		Scanner sc = new Scanner(file);
-    }
+			System.out.println("파일이 없습니다.");
+			e.printStackTrace();
+		}
+
+	}
 
 }
