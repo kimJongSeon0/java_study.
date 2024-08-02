@@ -2,6 +2,13 @@ package day_2024_08_01;
 
 import java.util.Scanner;
 
+//Calc cal;
+//switch(c) {
+//case '+' : 
+//   cal = new Add();
+//   break;
+//Calc cal; 
+//cal = new Add();
 abstract class Calc {
 
     protected int a;
@@ -15,10 +22,48 @@ abstract class Calc {
     abstract int calculate();
 }
 
+class Add extends Calc {
+
+    @Override
+    int calculate() {
+        return a + b;
+    }
+}
+
+class Sub extends Calc {
+
+    @Override
+    int calculate() {
+        return a - b;
+    }
+}
+
+class Mul extends Calc {
+
+    @Override
+    int calculate() {
+        return a * b;
+    }
+}
+
+class Div extends Calc {
+
+    @Override
+    int calculate() {
+        if (b == 0) {
+            System.out.println("잘못된 입력입니다.");
+            return 0;
+        }
+        return a / b;
+    }
+}
+
+//ADD 클래스 
 public class ExampleMain {
 
     public static void main(String[] args) {
 
+        // TODO Auto-generated method stub
         Scanner sc = new Scanner(System.in);
         int result = 0;
         System.out.print("두 정수와 연산자를 입력하시오 >> ");
@@ -50,5 +95,4 @@ public class ExampleMain {
         sc.close();
 
     }
-
 }
