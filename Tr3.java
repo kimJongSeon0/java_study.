@@ -1,14 +1,8 @@
 
-
 public class Tr3 {
 
     public static void main(String[] agrs) {
-        
-        
-        
-        
-        
-        
+
         // 1.가리키는 곳이 없음 =null
         // 2.개발자들이 사용 하는 용도
         // =슈퍼맨(JVM)으로 하여금 이객체를 사용하지 않는다는 것을 알려줌
