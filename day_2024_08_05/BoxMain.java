@@ -64,14 +64,17 @@ public class BoxMain {
         // System.out.println(ap);
         // System.out.println(og);
 
-        Box abox = new Box();
-        Box obox = new Box();
+        Box aBox = new Box();
+        Box oBox = new Box();
 
-        abox.set(new Apple());
-        obox.set(new Orange());
+        // abox.set(new Apple());
+        // obox.set(new Orange());
 
-        Apple ap = (Apple) abox.get();
-        Orange og = (Orange) obox.get();
+        aBox.set("Apple");
+        oBox.set("Orage");
+
+        Apple ap = (Apple) aBox.get();
+        Orange og = (Orange) oBox.get();
 
         System.out.println(ap);
         System.out.println(og);
