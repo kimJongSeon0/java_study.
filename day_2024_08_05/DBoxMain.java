@@ -10,7 +10,7 @@ class DBox<L, R>{
     }
     @Override
     public String toString(){
-        return str + " & " + count + "개 ";
+        return str + " & " + count;
     }
     
 }
@@ -21,5 +21,14 @@ public class DBoxMain {
         DBox<String, Integer> box = new DBox<String, Integer>();
         box.set("Apple", 25);
         System.out.println(box); // Apple & 25개
+
+        DBox<String, String> box2 = new DBox<String, String>();
+        box2.set("Apple", "Orange");
+        System.out.println(box2); // Apple & 25개
+
+        // DBox<String, Integer> box2 = new DBox<String, Integer>();
+        // box2.set("Apple", 25);
+        // System.out.println(box2); // Apple & 25개
+        
     }
 }
