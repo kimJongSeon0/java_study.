@@ -67,8 +67,6 @@ class OrangeBox {
     }
 }
 
-
-
 public class BoxMain {
 
     public static void main(String[] args) {
@@ -78,6 +76,7 @@ public class BoxMain {
         Box<String> sbox = new Box<>();
         Box<Integer> ibox = new Box<>();
         Box<Double> bbox = new Box<>();
+
 
         abox.set(new Apple());
         Apple ap = abox.get();  //  형변환도 필요없음.
@@ -99,7 +98,7 @@ public class BoxMain {
         Double db = bbox.get();
         System.out.println(db);
 
-        
+
         // AppleBox aBox = new AppleBox();
         // OrangeBox oBox = new OrangeBox();
 
