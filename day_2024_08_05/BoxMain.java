@@ -99,11 +99,7 @@ public class BoxMain {
         Double db = bbox.get();
         System.out.println(db);
 
-
         
-        
-
-
         // AppleBox aBox = new AppleBox();
         // OrangeBox oBox = new OrangeBox();
 
