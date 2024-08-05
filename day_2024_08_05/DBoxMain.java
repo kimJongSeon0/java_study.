@@ -1,5 +1,20 @@
 package day_2024_08_05;
 
+class DBox<L, R>{
+    private L str;
+    private R count;
+
+    public void set(L str, R count){
+        this.str = str;
+        this.count = count;
+    }
+    @Override
+    public String toString(){
+        return str + " & " + count + "개 ";
+    }
+    
+}
+
 public class DBoxMain {
     public static void main(String[] args) {
         
