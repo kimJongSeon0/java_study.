@@ -77,26 +77,36 @@ public class BoxMain {
         Box<Integer> ibox = new Box<>();
         Box<Double> bbox = new Box<>();
 
+        Box<String> sBox = new Box<>();
+        sBox.set("I am so happy.");
 
-        abox.set(new Apple());
-        Apple ap = abox.get();  //  형변환도 필요없음.
-        System.out.println(ap);
+        Box<Box<String>> wBox = new Box<>();
+        wBox.set(sBox);
+
+        Box<Box<Box<String>>> zBox = new Box<>();
+        zBox.set(wBox);
+
+        System.out.println(zBox.get().get().get());
+
+        // abox.set(new Apple());
+        // Apple ap = abox.get();  //  형변환도 필요없음.
+        // System.out.println(ap);
         
-        obox.set(new Orange()); //  Apple 외 에는 다른 타입 못 넣음.
-        Orange og = obox.get();
-        System.out.println(og);
+        // obox.set(new Orange()); //  Apple 외 에는 다른 타입 못 넣음.
+        // Orange og = obox.get();
+        // System.out.println(og);
 
-        sbox.set(new String("해킹 안됨."));
-        String str = sbox.get();
-        System.out.println(str);
+        // sbox.set(new String("해킹 안됨."));
+        // String str = sbox.get();
+        // System.out.println(str);
 
-        ibox.set(33);
-        Integer in = ibox.get();
-        System.out.println(in);
+        // ibox.set(33);
+        // Integer in = ibox.get();
+        // System.out.println(in);
         
-        bbox.set(3.14);
-        Double db = bbox.get();
-        System.out.println(db);
+        // bbox.set(3.14);
+        // Double db = bbox.get();
+        // System.out.println(db);
 
 
         // AppleBox aBox = new AppleBox();
