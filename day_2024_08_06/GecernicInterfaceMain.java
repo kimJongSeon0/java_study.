@@ -16,7 +16,7 @@ class Apple implements Eatable {
 	}
 }
 
-class Box<T extends Eatable> {
+class Box1<T extends Eatable> {
 	public T obj;
 
 	public T get() {
@@ -33,7 +33,7 @@ public class GecernicInterfaceMain {
 
 	public static void main(String[] args) {
 
-		Box<Apple> box = new Box<>();
+		Box1<Apple> box = new Box1<>();
 		box.set(new Apple());
 
 		Apple ap = box.get();

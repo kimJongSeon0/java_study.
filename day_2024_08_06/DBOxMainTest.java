@@ -14,7 +14,7 @@ class DBox<T, N>{
     }
 }
 
-public class DBOxMainTest {
+public class DBoxMainTest {
     public static void main(String[] args) {
         DBox<String, Integer> box = new DBox<String, Integer>();
         box.set("Apple", 25);
