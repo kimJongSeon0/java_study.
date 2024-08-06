@@ -1,7 +1,5 @@
 package day_2024_08_06;
 
-
-
 public class BoxMainTest {
 
     public static void main(String[] args) {
