@@ -25,7 +25,7 @@ public class LinkedList_EMain {
         l1.link = l2;
         l2.link = l3;
 
-        //		List<String> list = new ArrayList<>();
+        // List<String> list = new ArrayList<>();
         List<String> list = new LinkedList<>();
 
         list.add("Toy");
@@ -40,14 +40,15 @@ public class LinkedList_EMain {
             System.out.println(str);
         }
 
-        Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext());
-        String str = iterator.next();
-        System.out.println(str);
+        Iterator<String> iterator = list.iterator(); // 반복자,화살
+        while (iterator.hasNext()) {
+            String str = iterator.next();
+            System.out.println(str);
+        }
 
         System.out.println();
 
-        list.remove(0);	//	삭제 할 수 있는 코드.
+        list.remove(0); // 삭제 할 수 있는 코드.
 
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + '\t');
