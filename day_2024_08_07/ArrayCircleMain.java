@@ -29,7 +29,7 @@ public class ArrayCircleMain {
         double sum = 0;
 
         for (Circle circle : circleList) {
-            sum = sum + circle.getArea();
+            sum += circle.getArea();
         }
 
         System.out.println(sum);
