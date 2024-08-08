@@ -11,14 +11,14 @@ public class StarTr {
 
     public static void main(String[] args) {
     
-        // //구구단
-    // for (int i = 1; i <= 9; i++) {
-    //     System.out.println(i + "단 입니다.");
-	// 	for (int j = 1; j <= 9; j++) {
-	// 		System.out.println(i + " * " + j + " = " + (i * j));
-	// 	}
-	// 	System.out.println(); // 구구단이 끝나고 한 칸 띄워줌.
-    // }
+        //구구단
+    for (int i = 1; i <= 9; i++) {
+        System.out.println(i + "단 입니다.");
+		for (int j = 1; j <= 9; j++) {
+			System.out.println(i + " * " + j + " = " + (i * j));
+		}
+		System.out.println(); // 구구단이 끝나고 한 칸 띄워줌.
+    }
     
     // //짝수단만 나오게 하시오.
     // for(int i = 1; i <= 10; i++){
@@ -71,6 +71,6 @@ public class StarTr {
         //     System.out.println();
         // }
 
-        printStart(3);
+        // printStart(3);
     }
 }

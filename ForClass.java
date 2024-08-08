@@ -17,9 +17,9 @@ public class ForClass {
 
         // for문 무한루프.
 
-        for(;;){
-            System.out.println("Hello world");
-        }
+        // for(;;){
+        //     System.out.println("Hello world");
+        // }
 
         // 2중 for문. 구구단
 		// for문에서 쓰는 순서 i,j,k 순
@@ -53,12 +53,13 @@ public class ForClass {
         // if (result % 2 ==1)
         // if((i * j) % 2 == 1)
 
-        for(int i = 1; i <= 10; i++){
+        for(int i = 1; i <= 9; i++){
             
             for(int j = 1; j <= 9; j++){   
                 {
-                System.out.println(i + " * " + j + " = " + (i * j ));
+                System.out.print(i + " * " + j + " = " + (i * j ));
                 }
+                System.out.println();
             }
         }
     }
