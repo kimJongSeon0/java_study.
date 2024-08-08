@@ -3,35 +3,32 @@ package day_2024_08_07;
 import java.util.HashSet;
 import java.util.Set;
 
-class Num1 {
-
-    int num;
-
-    Num1(int num) {
-        this.num = num;
+class Num1{
+    
+    private int num;
+    public Num1(int n){
+        num = n;
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return String.valueOf(num);
     }
 
     @Override
-    public int hashCode() {
-        return num % 3;  //출력 순서를 맞추려면 이렇게 변경하면 된다는것까지 알았는데 정확히 왜인지는 모르겠다.
+    public int hashCode(){
+        return num % 3;
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (num == ((Num) obj).num) {
-            return true; 
-        }else {
+    public  boolean equals(Object obj){
+        if(num == ((Num)obj).num)
+            return true;
+        else
             return false;
-        }
     }
+    
 }
-
-
 public class SetMain {
 
     public static void main(String[] args) {
