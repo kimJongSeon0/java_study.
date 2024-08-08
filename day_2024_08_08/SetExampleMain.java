@@ -14,11 +14,6 @@ class Person {
     }
 
     @Override
-    public String toString() {
-        return String.valueOf(age);
-    }
-
-    @Override
     public int hashCode() {
         return age % 3;
     }
