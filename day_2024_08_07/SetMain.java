@@ -3,6 +3,8 @@ package day_2024_08_07;
 import java.util.HashSet;
 import java.util.Set;
 
+import day_2024_08_08.Num;
+
 class Num1 {
 
     int num;
