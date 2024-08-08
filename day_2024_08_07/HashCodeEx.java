@@ -7,7 +7,7 @@ package day_2024_08_07;
 class AAA{
     
     public AAA(){
-        System.out.println(hashCode()); //  hashCode(주소)hash(암호화)
+        System.out.println(hashCode()); //  hashCode(주소)hash(암호화)주소표현(가짜 주소표현)
         //System.out.println(super.hashCode());
     }
 }
