@@ -35,24 +35,25 @@ class Num1 {
 public class SetMain {
 
     public static void main(String[] args) {
-        Set<Num1> n1 = new HashSet<>();
+        
+        // Set<Num1> n1 = new HashSet<>();
 
-        n1.add(new Num1(1));
-        n1.add(new Num1(2));
-        n1.add(new Num1(3));
+        // n1.add(new Num1(1));
+        // n1.add(new Num1(2));
+        // n1.add(new Num1(3));
 
-        System.out.println(n1.size());
+        // System.out.println(n1.size());
 
-        // Set<Integer> lottoSet = new HashSet<>();
-        // final int LOTTO = 6;
-        // while (lottoSet.size() < LOTTO) {
-        //     int num = (int) ((Math.random() * 45) + 1);
-        //     lottoSet.add(num);
-        // }
-        // System.out.println(lottoSet);
-        // for (Integer s : lottoSet) {
-        //     System.out.println(s);
-        // }
+        Set<Integer> lottoSet = new HashSet<>();
+        final int LOTTO = 6;
+        while (lottoSet.size() < LOTTO) {
+            int num = (int) ((Math.random() * 45) + 1);
+            lottoSet.add(num);
+        }
+        System.out.println(lottoSet);
+        for (Integer s : lottoSet) {
+            System.out.println(s);
+        }
         // Set<Integer> set = new HashSet<>();
         // set.add(1);
         // set.add(2);

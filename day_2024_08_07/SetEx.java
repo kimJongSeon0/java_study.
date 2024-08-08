@@ -7,6 +7,7 @@ import java.util.Set;
 public class SetEx {
 
     public static void main(String[] args) {
+        
         Set<String> set = new HashSet<>();
         set.add("Toy");
         set.add("Robot");
