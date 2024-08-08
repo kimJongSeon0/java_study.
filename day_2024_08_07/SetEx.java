@@ -25,6 +25,5 @@ public class SetEx {
             System.out.print(s + '\t');
         }
         System.out.println();
-
     }
 }
