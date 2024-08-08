@@ -28,7 +28,6 @@ class Num1{
         else
             return false;
     }
-    
 }
 public class SetMain {
 
