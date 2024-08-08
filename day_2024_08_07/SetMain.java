@@ -1,5 +1,6 @@
 package day_2024_08_07;
 
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,7 +23,7 @@ class Num1{
 
     @Override
     public  boolean equals(Object obj){
-        if(num == ((Num)obj).num)
+        if(num == ((Num1)obj).num)
             return true;
         else
             return false;
