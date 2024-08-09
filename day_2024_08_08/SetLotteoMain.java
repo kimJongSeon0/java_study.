@@ -17,7 +17,7 @@ class Num{
     public int hashCode(){
         return num % 2;
     }
-
+ 
     public boolean equals(Object obj){
         if (this.num == ((Num) obj).num){
             return true;
