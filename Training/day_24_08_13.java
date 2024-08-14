@@ -71,3 +71,27 @@ MVC패턴에서 컨트롤러로 이용됨
 // --JOB 컬럼값이 MANAGER인 경우, 급여를 10% 인상하는 쿼리문
 // --부서 번호가 10번인 사원의 부서 번호를 40번으로 수정
 }
+
+
+
+
+<table border="1" cellspacing="0">
+<tr bgcolor="pink">
+<%
+	for( i = 2; i < 10; i++){
+		out.print("<th width=100>" + i + "단</th>");
+	}
+%>
+</tr>
+<%
+	for( i = 1; i < 10; i++){
+%>
+<tr>
+		<% for(int j = 2; j < 10; j++){
+			out.print("<td align=center>" + j + "*" + i + "=" + j * i +"</td>");
+		}%>
+</tr>
+<%		
+	}
+ %>
+</table>

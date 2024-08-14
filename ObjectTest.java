@@ -155,12 +155,12 @@ public class ObjectTest {
         System.out.println("평균은 " + grade.getTotal() + "입니다.");
 
         // Circle circle = new Circle();
-        // Rectangle rec = new Rectangle();
+        Rectangle rec = new Rectangle();
         
-        // rec.setHeight(10.1);
-        // rec.setWidth(10.1);
+        rec.setHeight(10.1);
+        rec.setWidth(10.1);
 
-        // System.out.println(rec.getArea());
+        System.out.println(rec.getArea());
 
 
 

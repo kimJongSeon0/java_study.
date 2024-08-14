@@ -39,8 +39,8 @@ public class SetLotteoMain {
             lottoSet.add(num);
         }
         System.out.println(lottoSet);
-        for (Integer s : lottoSet) {
-            System.out.println(s);
-        }
+        // for (Integer s : lottoSet) {
+        //     System.out.println(s);
+        // }
     }
 }
