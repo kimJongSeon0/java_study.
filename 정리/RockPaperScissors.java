@@ -51,5 +51,6 @@ public class RockPaperScissors {
         } else {
             return "컴퓨터가 이겼습니다!";
         }
+        
     }
 }
